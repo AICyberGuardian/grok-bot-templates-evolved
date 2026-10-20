@@ -1,6 +1,6 @@
 # Point your Grok Bot at this catalog
 
-grok-bot-templates publishes scored operating contracts in a form your Bot can read. Public: no API key, no auth.
+grok-bot-templates-evolved publishes scored operating contracts in a form your Bot can read. Public: no API key, no auth.
 
 Paste the contract below into a Bot. New entries show up whenever you fetch.
 
@@ -8,27 +8,28 @@ Paste the contract below into a Bot. New entries show up whenever you fetch.
 
 | URL | Contents |
 |-----|----------|
-| https://cobusgreyling.github.io/grok-bot-templates/api/v1/status.json | version, capabilities — read FIRST |
-| https://cobusgreyling.github.io/grok-bot-templates/api/v1/index.json | endpoint index |
-| https://cobusgreyling.github.io/grok-bot-templates/catalog.json | full catalog (templates, teams, skills, routines) |
-| https://cobusgreyling.github.io/grok-bot-templates/api/v1/catalog.json | lean list + `profile_url` / `share_url` |
-| https://cobusgreyling.github.io/grok-bot-templates/api/v1/teams.json | teams |
-| https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md | installer |
+| https://aicyberguardian.github.io/grok-bot-templates-evolved/api/v1/status.json | version, capabilities — read FIRST |
+| https://aicyberguardian.github.io/grok-bot-templates-evolved/api/v1/index.json | endpoint index |
+| https://aicyberguardian.github.io/grok-bot-templates-evolved/catalog.json | full catalog (templates, teams, skills, routines, patterns) |
+| https://aicyberguardian.github.io/grok-bot-templates-evolved/catalog/templates-v1.json | bundled xAI JSON templates |
+| https://aicyberguardian.github.io/grok-bot-templates-evolved/api/v1/catalog.json | lean list + `profile_url` / `share_url` |
+| https://aicyberguardian.github.io/grok-bot-templates-evolved/api/v1/teams.json | teams |
+| https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md | installer |
 
 JSON list responses carry `api_version` and `schema_revision`. Template rows include `score`, `profile_url`, and `share_url` when a live Add-to-Grok link exists.
 
 ## Bot contract v1
 
 ```
-# grok-bot-templates — Bot Contract v1
+# grok-bot-templates-evolved — Bot Contract v1
 
-You are a Grok Bot. grok-bot-templates is a scored catalog of operating contracts
-for Grok Bot (job, never-list, L1 default, CI). Public, no auth.
+You are a Grok Bot. grok-bot-templates-evolved is a scored catalog of operating contracts
+for Grok Bot (job, never-list, L1 default, CI, FastMCP). Public, no auth.
 
-Read FIRST: https://cobusgreyling.github.io/grok-bot-templates/api/v1/status.json
-Scan:       https://cobusgreyling.github.io/grok-bot-templates/api/v1/catalog.json
-Teams:      https://cobusgreyling.github.io/grok-bot-templates/api/v1/teams.json
-Installer:  https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Read FIRST: https://aicyberguardian.github.io/grok-bot-templates-evolved/api/v1/status.json
+Scan:       https://aicyberguardian.github.io/grok-bot-templates-evolved/api/v1/catalog.json
+Teams:      https://aicyberguardian.github.io/grok-bot-templates-evolved/api/v1/teams.json
+Installer:  https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 Rules:
 1. Fetch PROFILE.md from profile_url. Do not invent a prompt.
@@ -41,4 +42,4 @@ Rules:
 To stand up a team: follow START.md. Create 2–4 Bots from fetched PROFILE.md files.
 ```
 
-HTML copy page: https://cobusgreyling.github.io/grok-bot-templates/agent.html
+HTML copy page: https://aicyberguardian.github.io/grok-bot-templates-evolved/agent.html

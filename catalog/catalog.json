@@ -1,6 +1,6 @@
 {
   "name": "grok-bot-templates",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "api_version": "v1",
   "schema_revision": "2026-08-29",
   "spec": "https://github.com/AICyberGuardian/grok-bot-templates-evolved/blob/main/SPEC.md",

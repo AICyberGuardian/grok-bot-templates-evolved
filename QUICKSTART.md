@@ -8,19 +8,19 @@ You need [Grok Bot](https://x.ai/bot) (desktop app; eligible Cursor / SuperGrok 
 2. Paste this URL and send:
 
 ```
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 ```
 
-3. Tap a team (try **Eng**)
+3. Tap a team (try **Eng** or **Agora Career**)
 4. Connect the plugins it lists
 5. Stay at L1 for a week
 
 ## Option B — one Bot, copy the PROFILE
 
-Browse the [Pages catalog](https://cobusgreyling.github.io/grok-bot-templates/) and hit **Copy PROFILE**, or:
+Browse the [Pages catalog](https://aicyberguardian.github.io/grok-bot-templates-evolved/) and hit **Copy PROFILE**, or:
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init pr-reviewer --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init pr-reviewer --print
 ```
 
 1. In Grok Bot: **New → Create new agent**
@@ -33,28 +33,28 @@ npx --yes github:cobusgreyling/grok-bot-templates init pr-reviewer --print
 ## Option C — a team from the CLI
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init --team eng --out ./eng-bots
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init --team agora-career --out ./career-bots
 ```
 
-Create the three Bots from `./eng-bots/*/PROFILE.md`, put them in one group, paste `TEAM.md` kickoff.
+Create the three Bots from `./career-bots/*/PROFILE.md`, put them in one group, paste `TEAM.md` kickoff.
 
 ## Option D — score a contract you wrote
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates new onboard-ledger --category ops
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved new onboard-ledger --category ops
 # edit templates/ops/onboard-ledger/template.yaml
-npx --yes github:cobusgreyling/grok-bot-templates score onboard-ledger
-npx --yes github:cobusgreyling/grok-bot-templates validate
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score onboard-ledger
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved validate
 ```
 
 Ready means **≥ 80** and a declared autonomy level.
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates score --badge --md
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score --badge --md
 ```
 
 ## What "week one" means
 
 Read-and-prepare. Drafts, not sends. Official sequence: job in the description → one real task → correct it → save a skill → test a second input → then maybe a routine.
 
-Details: [SPEC.md](./SPEC.md) · [docs/autonomy.md](./docs/autonomy.md) · [docs/safety.md](./docs/safety.md)
+Details: [SPEC.md](./SPEC.md) · [docs/autonomy.md](./docs/autonomy.md) · [docs/safety.md](./docs/safety.md) · [Canonical Manual](./docs/grok-bot-canonical.llm.md)

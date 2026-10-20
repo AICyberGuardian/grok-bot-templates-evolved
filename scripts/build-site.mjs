@@ -4,7 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadAll } from "../lib/load.mjs";
 import { scoreTemplate } from "../lib/score.mjs";
-import { PAGES, GH, START_URL, profileUrl, treeUrl, teamUrl } from "../lib/urls.mjs";
+import { PAGES, GH, START_URL, NPX, profileUrl, treeUrl, teamUrl } from "../lib/urls.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const loaded = loadAll(root);
@@ -762,11 +762,11 @@ const html = `<!DOCTYPE html>
         <p class="hint">Setup fetches each Bot's PROFILE.md. It does not invent prompts.</p>
         <details class="cli">
           <summary>Prefer the CLI?</summary>
-          <pre>npx --yes github:cobusgreyling/grok-bot-templates list
-npx --yes github:cobusgreyling/grok-bot-templates init pr-reviewer --print
-npx --yes github:cobusgreyling/grok-bot-templates init --team eng --out ./eng-bots
-npx --yes github:cobusgreyling/grok-bot-templates score pr-reviewer --badge</pre>
-          <p>Scoped package <code>@cobusgreyling/grokbot</code> publishes on the next npm release. GitHub npx works today.</p>
+          <pre>${NPX} list
+${NPX} init pr-reviewer --print
+${NPX} init --team eng --out ./eng-bots
+${NPX} score pr-reviewer --badge</pre>
+          <p>CLI package <code>${pkg.name}</code> (v${pkg.version}). GitHub npx works today.</p>
         </details>
       </section>
       <section class="door" id="one-bot">
