@@ -27,13 +27,13 @@ Own the pre-call brief for each named customer meeting. Reconstruct CRM, mail, c
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\sales\meeting-prep/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/sales/meeting-prep/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init meeting-prep --print
-npx --yes github:cobusgreyling/grok-bot-templates score meeting-prep
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init meeting-prep --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score meeting-prep
 ```

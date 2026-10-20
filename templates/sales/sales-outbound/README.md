@@ -27,13 +27,13 @@ Own account research, contact prioritization, and review-ready outreach for a na
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\sales\sales-outbound/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/sales/sales-outbound/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init sales-outbound --print
-npx --yes github:cobusgreyling/grok-bot-templates score sales-outbound
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init sales-outbound --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score sales-outbound
 ```

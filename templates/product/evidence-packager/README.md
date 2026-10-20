@@ -27,13 +27,13 @@ Own the evidence pack a human needs before a ship or block verdict — request, 
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\product\evidence-packager/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/product/evidence-packager/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init evidence-packager --print
-npx --yes github:cobusgreyling/grok-bot-templates score evidence-packager
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init evidence-packager --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score evidence-packager
 ```

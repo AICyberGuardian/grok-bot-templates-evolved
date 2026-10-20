@@ -27,13 +27,13 @@ Own targeted performance investigations with evidence: dashboards, traces, and s
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\product\product-performance/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/product/product-performance/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init product-performance --print
-npx --yes github:cobusgreyling/grok-bot-templates score product-performance
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init product-performance --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score product-performance
 ```

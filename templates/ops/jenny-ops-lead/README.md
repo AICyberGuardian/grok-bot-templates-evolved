@@ -27,13 +27,13 @@ Govern multi-bot fleet alignment, surface operational blockers, conduct 5 AM 1:1
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\ops\jenny-ops-lead/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/ops/jenny-ops-lead/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init jenny-ops-lead --print
-npx --yes github:cobusgreyling/grok-bot-templates score jenny-ops-lead
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init jenny-ops-lead --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score jenny-ops-lead
 ```

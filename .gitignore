@@ -15,3 +15,6 @@ tmp/
 *.swp
 .grokbot-out/
 .superpowers/
+__pycache__/
+*.py[cod]
+.venv/

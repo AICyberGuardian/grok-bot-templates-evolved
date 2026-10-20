@@ -3,10 +3,11 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadAll } from "../lib/load.mjs";
+import { RAW, START_URL } from "../lib/urls.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const loaded = loadAll(root);
-const RAW = "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main";
+// RAW imported from lib/urls.mjs
 
 const teamLines = loaded.teams
   .map((t) => {

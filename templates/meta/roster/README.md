@@ -27,13 +27,13 @@ Own the fleet inventory. Audit every Bot on this account, propose cuts and merge
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\meta\roster/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/meta/roster/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init roster --print
-npx --yes github:cobusgreyling/grok-bot-templates score roster
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init roster --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score roster
 ```

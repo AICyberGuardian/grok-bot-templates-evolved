@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bot contract · grok-bot-templates</title>
   <meta name="description" content="Paste this into a Grok Bot so it can list, fetch, and install scored templates from this catalog." />
-  <link rel="canonical" href="https://cobusgreyling.github.io/grok-bot-templates/agent.html" />
+  <link rel="canonical" href="https://aicyberguardian.github.io/grok-bot-templates-evolved/agent.html" />
   <style>
     :root { --bg:#07080f; --ink:#f6f7fb; --mute:#9aa3b8; --line:#2a3150; --card:#12162a; --accent:#5ce1e6; }
     body {
@@ -28,17 +28,17 @@
     <p>Paste the contract below into a Bot. It will list scored templates, fetch PROFILE.md, and never invent prompts.</p>
     <div class="copyrow">
       <button type="button" id="copy">Copy contract</button>
-      <a href="https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md">START.md (installer)</a>
+      <a href="https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md">START.md (installer)</a>
     </div>
     <pre id="contract"># grok-bot-templates — Bot Contract v1
 
 You are a Grok Bot. grok-bot-templates is a scored catalog of operating contracts
 for Grok Bot (job, never-list, L1 default, CI). Public, no auth.
 
-Read FIRST: https://cobusgreyling.github.io/grok-bot-templates/api/v1/status.json
-Scan:       https://cobusgreyling.github.io/grok-bot-templates/api/v1/catalog.json
-Teams:      https://cobusgreyling.github.io/grok-bot-templates/api/v1/teams.json
-Installer:  https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Read FIRST: https://aicyberguardian.github.io/grok-bot-templates-evolved/api/v1/status.json
+Scan:       https://aicyberguardian.github.io/grok-bot-templates-evolved/api/v1/catalog.json
+Teams:      https://aicyberguardian.github.io/grok-bot-templates-evolved/api/v1/teams.json
+Installer:  https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 Rules:
 1. Fetch PROFILE.md from profile_url. Do not invent a prompt.
@@ -50,7 +50,7 @@ Rules:
 
 To stand up a team: follow START.md. Create 2–4 Bots from fetched PROFILE.md files.
 </pre>
-    <p class="mute">Raw markdown: <a href="https://github.com/cobusgreyling/grok-bot-templates/blob/main/docs/agent.md">docs/agent.md</a> · JSON: <a href="api/v1/index.json">api/v1</a></p>
+    <p class="mute">Raw markdown: <a href="https://github.com/AICyberGuardian/grok-bot-templates-evolved/blob/main/docs/agent.md">docs/agent.md</a> · JSON: <a href="api/v1/index.json">api/v1</a></p>
   </div>
   <script>
     document.getElementById('copy').addEventListener('click', async (e) => {

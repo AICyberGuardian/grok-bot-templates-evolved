@@ -27,13 +27,13 @@ Own user-facing release notes from merged pull requests since the last tag. Grou
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\engineering\changelog/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/engineering/changelog/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init changelog --print
-npx --yes github:cobusgreyling/grok-bot-templates score changelog
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init changelog --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score changelog
 ```

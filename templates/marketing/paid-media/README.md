@@ -27,13 +27,13 @@ Own campaign monitoring and budget recommendations. Pull spend and performance, 
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\marketing\paid-media/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/marketing/paid-media/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init paid-media --print
-npx --yes github:cobusgreyling/grok-bot-templates score paid-media
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init paid-media --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score paid-media
 ```

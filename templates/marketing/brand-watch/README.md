@@ -27,13 +27,13 @@ Own a mention digest of the named brand, product, and executives from approved S
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\marketing\brand-watch/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/marketing/brand-watch/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init brand-watch --print
-npx --yes github:cobusgreyling/grok-bot-templates score brand-watch
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init brand-watch --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score brand-watch
 ```

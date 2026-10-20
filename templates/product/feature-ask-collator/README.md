@@ -27,13 +27,13 @@ Own clustering the same product request that is living in many Slack threads int
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\product\feature-ask-collator/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/product/feature-ask-collator/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init feature-ask-collator --print
-npx --yes github:cobusgreyling/grok-bot-templates score feature-ask-collator
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init feature-ask-collator --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score feature-ask-collator
 ```

@@ -27,13 +27,13 @@ Own a cloud-bill note from invoices in mail and Drive: what moved versus last pe
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\ops\cloud-spend/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/ops/cloud-spend/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init cloud-spend --print
-npx --yes github:cobusgreyling/grok-bot-templates score cloud-spend
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init cloud-spend --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score cloud-spend
 ```

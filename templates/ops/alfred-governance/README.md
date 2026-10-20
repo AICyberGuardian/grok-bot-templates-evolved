@@ -27,13 +27,13 @@ Govern bot organization topology, prevent agent sprawl, enforce single human own
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\ops\alfred-governance/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/ops/alfred-governance/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init alfred-governance --print
-npx --yes github:cobusgreyling/grok-bot-templates score alfred-governance
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init alfred-governance --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score alfred-governance
 ```

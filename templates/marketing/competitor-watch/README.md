@@ -27,13 +27,13 @@ Own a standing watch on a named set of three to eight competitors. Snapshot publ
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\marketing\competitor-watch/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/marketing/competitor-watch/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init competitor-watch --print
-npx --yes github:cobusgreyling/grok-bot-templates score competitor-watch
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init competitor-watch --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score competitor-watch
 ```

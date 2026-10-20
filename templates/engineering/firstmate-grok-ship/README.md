@@ -27,13 +27,13 @@ Manage high-volume GitHub repositories at scale, architect feature specs, delega
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\engineering\firstmate-grok-ship/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/engineering/firstmate-grok-ship/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init firstmate-grok-ship --print
-npx --yes github:cobusgreyling/grok-bot-templates score firstmate-grok-ship
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init firstmate-grok-ship --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score firstmate-grok-ship
 ```

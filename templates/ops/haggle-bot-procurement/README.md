@@ -27,13 +27,13 @@ Audit corporate vendor spend, identify unused SaaS licenses, price market altern
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\ops\haggle-bot-procurement/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/ops/haggle-bot-procurement/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init haggle-bot-procurement --print
-npx --yes github:cobusgreyling/grok-bot-templates score haggle-bot-procurement
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init haggle-bot-procurement --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score haggle-bot-procurement
 ```

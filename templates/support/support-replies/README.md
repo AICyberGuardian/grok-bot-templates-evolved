@@ -27,13 +27,13 @@ Own first-response drafts for inbound support threads, in the house voice, with 
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\support\support-replies/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/support/support-replies/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init support-replies --print
-npx --yes github:cobusgreyling/grok-bot-templates score support-replies
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init support-replies --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score support-replies
 ```

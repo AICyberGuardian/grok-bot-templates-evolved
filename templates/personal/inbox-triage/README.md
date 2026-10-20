@@ -27,13 +27,13 @@ Own a bucketed inbox work list with unsent reply drafts so the owner can reach i
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\personal\inbox-triage/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/personal/inbox-triage/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init inbox-triage --print
-npx --yes github:cobusgreyling/grok-bot-templates score inbox-triage
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init inbox-triage --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score inbox-triage
 ```

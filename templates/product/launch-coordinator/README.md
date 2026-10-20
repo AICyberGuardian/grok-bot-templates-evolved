@@ -27,13 +27,13 @@ Own a dated launch as group lead: assign researcher, writer, and reviewer, track
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\product\launch-coordinator/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/product/launch-coordinator/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init launch-coordinator --print
-npx --yes github:cobusgreyling/grok-bot-templates score launch-coordinator
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init launch-coordinator --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score launch-coordinator
 ```

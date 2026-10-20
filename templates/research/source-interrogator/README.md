@@ -27,13 +27,13 @@ Own the hunt for assumptions treated as facts in a brief, memo, or "everybody kn
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\research\source-interrogator/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/research/source-interrogator/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init source-interrogator --print
-npx --yes github:cobusgreyling/grok-bot-templates score source-interrogator
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init source-interrogator --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score source-interrogator
 ```

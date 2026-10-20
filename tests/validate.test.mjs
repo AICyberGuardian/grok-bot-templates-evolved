@@ -6,6 +6,7 @@ import { scoreAll, scoreTemplate } from "../lib/score.mjs";
 import { resolveRoot } from "../lib/paths.mjs";
 import { renderProfile } from "../lib/render.mjs";
 import { findSecrets } from "../lib/secrets.mjs";
+import { profileUrl, treeUrl } from "../lib/urls.mjs";
 
 const loaded = loadAll(resolveRoot());
 
@@ -134,4 +135,15 @@ test("mcp and plugin validators compile and validate correctly", () => {
     ],
   };
   assert.ok(validators.plugin(validPlugin), "valid plugin marketplace manifest passes");
+});
+
+test("all templates have normalized forward-slash URLs and zero backslashes", () => {
+  for (const t of loaded.templates) {
+    const pUrl = profileUrl(t);
+    const tUrl = treeUrl(t);
+    assert.ok(!pUrl.includes("\\"), `profileUrl contains backslash: ${pUrl}`);
+    assert.ok(!tUrl.includes("\\"), `treeUrl contains backslash: ${tUrl}`);
+    assert.ok(pUrl.startsWith("https://raw.githubusercontent.com/"), `unexpected profileUrl host: ${pUrl}`);
+    assert.ok(tUrl.startsWith("https://github.com/"), `unexpected treeUrl host: ${tUrl}`);
+  }
 });

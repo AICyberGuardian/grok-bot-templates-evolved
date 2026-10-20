@@ -27,13 +27,13 @@ Own the weekly newsletter draft from saved links, notes, and mail the owner alre
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\marketing\newsletter-desk/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/marketing/newsletter-desk/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init newsletter-desk --print
-npx --yes github:cobusgreyling/grok-bot-templates score newsletter-desk
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init newsletter-desk --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score newsletter-desk
 ```

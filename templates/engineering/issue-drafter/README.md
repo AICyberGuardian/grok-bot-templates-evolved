@@ -27,13 +27,13 @@ Own turning a Slack thread, email, or repro pack into an unsent GitHub issue tha
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\engineering\issue-drafter/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/engineering/issue-drafter/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init issue-drafter --print
-npx --yes github:cobusgreyling/grok-bot-templates score issue-drafter
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init issue-drafter --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score issue-drafter
 ```

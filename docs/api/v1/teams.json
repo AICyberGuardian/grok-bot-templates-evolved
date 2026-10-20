@@ -13,7 +13,7 @@
       ],
       "why": "Executive career management requires decoupling resume keyword tailoring, standing ops governance, and procurement-backed compensation negotiation.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/agora-career/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/agora-career/team.yaml"
     },
     {
       "id": "eng",
@@ -26,7 +26,7 @@
       ],
       "why": "Staging reports stall when repro, the unsent issue, and the risk review live in one undifferentiated chat.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/eng/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/eng/team.yaml"
     },
     {
       "id": "executive-bot-boss",
@@ -39,7 +39,7 @@
       ],
       "why": "Managing autonomous bot fleets at enterprise scale requires unified topology governance, daily operational standups, and competitor market intelligence.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/executive-bot-boss/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/executive-bot-boss/team.yaml"
     },
     {
       "id": "loop",
@@ -53,7 +53,7 @@
       ],
       "why": "Inner-loop coding agents still need an outer evidence/verdict loop before anyone merges, tags, or writes the ship rationale.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/loop/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/loop/team.yaml"
     },
     {
       "id": "marketing",
@@ -66,7 +66,7 @@
       ],
       "why": "Competitor noise, channel variants, and the weekly issue get mixed until someone diffs, remixes, and still does not publish.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/marketing/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/marketing/team.yaml"
     },
     {
       "id": "meta",
@@ -80,7 +80,7 @@
       ],
       "why": "Standing up a catalog team, cutting a bloated fleet, routing work, and minting the next contract are four jobs, not one Setup dump.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/meta/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/meta/team.yaml"
     },
     {
       "id": "ops",
@@ -93,7 +93,7 @@
       ],
       "why": "The week hides in Slack, receipts, and vendor mail until someone maps it to priorities without sending a chase.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/ops/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/ops/team.yaml"
     },
     {
       "id": "personal",
@@ -106,7 +106,7 @@
       ],
       "why": "Inbox zero fails when mail, meetings, and unused subs are one Bot that is tempted to send, decline, and unsubscribe.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/personal/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/personal/team.yaml"
     },
     {
       "id": "product",
@@ -119,7 +119,7 @@
       ],
       "why": "Latency, Slack asks, and launch day collide unless one Bot owns evidence, one clusters asks, and one refuses to publish.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/product/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/product/team.yaml"
     },
     {
       "id": "rankem-mobile-studio",
@@ -133,7 +133,7 @@
       ],
       "why": "Production mobile and full-stack software factories require compute arbitrage, rigorous test harness assertions, autonomous triage, and risk-first PR review.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/rankem-mobile-studio/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/rankem-mobile-studio/team.yaml"
     },
     {
       "id": "research",
@@ -146,7 +146,7 @@
       ],
       "why": "Deep briefs, three-minute answers, and assumption hunts are different jobs; mixing them hides the not-found list.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/research/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/research/team.yaml"
     },
     {
       "id": "sales",
@@ -159,7 +159,7 @@
       ],
       "why": "Outbound volume is useless if the next call is unbriefed and the recap never gets written down before it is sent.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/sales/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/sales/team.yaml"
     },
     {
       "id": "success",
@@ -172,7 +172,7 @@
       ],
       "why": "Renewals slip when health is a vibe, replies go out uncited, and promises evaporate after the call.\n",
       "autonomy": "L1",
-      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/success/team.yaml"
+      "yaml_url": "https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/teams/success/team.yaml"
     }
   ]
 }

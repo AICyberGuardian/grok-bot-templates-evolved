@@ -27,13 +27,13 @@ Own a security and hygiene review of a named repository. Recommend issues and PR
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\engineering\repo-hardener/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/engineering/repo-hardener/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init repo-hardener --print
-npx --yes github:cobusgreyling/grok-bot-templates score repo-hardener
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init repo-hardener --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score repo-hardener
 ```

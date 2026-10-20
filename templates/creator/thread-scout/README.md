@@ -27,13 +27,13 @@ Own studying public high-engagement X threads for craft — hook, beats, proof t
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\creator\thread-scout/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/creator/thread-scout/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init thread-scout --print
-npx --yes github:cobusgreyling/grok-bot-templates score thread-scout
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init thread-scout --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score thread-scout
 ```

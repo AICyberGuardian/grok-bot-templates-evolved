@@ -27,13 +27,13 @@ Own a report of CI failures and flaky tests on named repositories. Split new bre
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\engineering\ci-sweeper/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/engineering/ci-sweeper/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init ci-sweeper --print
-npx --yes github:cobusgreyling/grok-bot-templates score ci-sweeper
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init ci-sweeper --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score ci-sweeper
 ```

@@ -27,13 +27,13 @@ Own explaining and drafting SQL from the schema in this repository. Return revie
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\engineering\query-helper/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/engineering/query-helper/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init query-helper --print
-npx --yes github:cobusgreyling/grok-bot-templates score query-helper
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init query-helper --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score query-helper
 ```

@@ -27,13 +27,13 @@ Own protection of pinned deep-work blocks: map collisions, draft declines, and l
 
 Paste the raw PROFILE into **Bot actions → Edit Profile**, or send this URL to a Bot named Setup:
 
-https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\personal\calendar-defender/PROFILE.md
+https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/templates/personal/calendar-defender/PROFILE.md
 
-Installer: https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
+Installer: https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/START.md
 
 CLI (optional):
 
 ```bash
-npx --yes github:cobusgreyling/grok-bot-templates init calendar-defender --print
-npx --yes github:cobusgreyling/grok-bot-templates score calendar-defender
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved init calendar-defender --print
+npx --yes github:AICyberGuardian/grok-bot-templates-evolved score calendar-defender
 ```
