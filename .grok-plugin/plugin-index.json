@@ -1,0 +1,84 @@
+{
+  "marketplace_name": "aicyberguardian-grok-marketplace",
+  "version": "1.2.0",
+  "updated_at": "2026-10-20T04:30:10.749Z",
+  "plugin_count": 5,
+  "plugins": [
+    {
+      "name": "grok-templates-evolved",
+      "source": ".",
+      "description": "The engineering kit and template library for Grok Bot with 32-chapter canonical corpus and multi-bot teams.",
+      "version": "1.2.0",
+      "compatibility": {
+        "claude_plugin": true,
+        "zero_config": true
+      },
+      "repository": "https://github.com/AICyberGuardian/grok-bot-templates-evolved",
+      "mcp": null,
+      "skills": [],
+      "templates": []
+    },
+    {
+      "name": "fleet-ops",
+      "source": "mcp-servers/fleet-ops",
+      "description": "FastMCP daemon for Grok Bot container health auditing, SQLite query tools, and webhooks.",
+      "version": "1.0.0",
+      "compatibility": {
+        "fastmcp": true,
+        "firecracker_persistent": true
+      },
+      "repository": "https://github.com/AICyberGuardian/grok-bot-templates-evolved",
+      "mcp": "mcp-servers/fleet-ops/.cursor/mcp.json",
+      "skills": [],
+      "templates": []
+    },
+    {
+      "name": "executive-job-search",
+      "source": "plugins/executive-job-search",
+      "description": "Executive job-search ContentPack: job leads, roles, compensation bands, interview stages, and target criteria.",
+      "version": "0.3.4",
+      "compatibility": {
+        "claude_plugin": true,
+        "zero_config": true
+      },
+      "repository": "https://github.com/AICyberGuardian/grok-bot-templates-evolved",
+      "mcp": null,
+      "skills": [
+        "anti-hallucination-gate",
+        "ats-aeo-keyword-audit",
+        "cv-generator",
+        "rate-negotiator"
+      ],
+      "templates": [
+        "career-engineer",
+        "haggle-bot-procurement"
+      ]
+    },
+    {
+      "name": "knowledge-brain",
+      "source": "mcp-servers/knowledge-brain",
+      "description": "FastMCP retrieval daemon for LanceDB hybrid vector and BM25 index querying.",
+      "version": "1.0.0",
+      "compatibility": {
+        "fastmcp": true
+      },
+      "repository": "https://github.com/AICyberGuardian/grok-bot-templates-evolved",
+      "mcp": "mcp-servers/knowledge-brain/.cursor/mcp.json",
+      "skills": [],
+      "templates": []
+    },
+    {
+      "name": "seomatic-gsc",
+      "source": "mcp-servers/seomatic-gsc",
+      "description": "FastMCP search analytics and URL inspection daemon for SEO/AEO routines.",
+      "version": "1.0.0",
+      "compatibility": {
+        "fastmcp": true
+      },
+      "repository": "https://github.com/AICyberGuardian/grok-bot-templates-evolved",
+      "mcp": "mcp-servers/seomatic-gsc/.cursor/mcp.json",
+      "skills": [],
+      "templates": []
+    }
+  ]
+}
