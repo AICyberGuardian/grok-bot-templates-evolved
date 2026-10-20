@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { loadAll } from "../lib/load.mjs";
-import { validateLoaded } from "../lib/validate.mjs";
+import { validateLoaded, compileValidators } from "../lib/validate.mjs";
 import { scoreAll, scoreTemplate } from "../lib/score.mjs";
 import { resolveRoot } from "../lib/paths.mjs";
 import { renderProfile } from "../lib/render.mjs";
@@ -104,4 +104,34 @@ test("scoreTemplate is 100 max", () => {
   const t = loaded.templates[0];
   const s = scoreTemplate(t);
   assert.equal(s.max, 100);
+});
+
+test("mcp and plugin validators compile and validate correctly", () => {
+  const validators = compileValidators(loaded.dirs.root);
+  assert.ok(validators.mcp, "mcp validator exists");
+  assert.ok(validators.plugin, "plugin validator exists");
+
+  const validMcp = {
+    mcpServers: {
+      "fleet-ops": {
+        command: "python3",
+        args: ["fleet_ops_mcp.py"],
+      },
+    },
+  };
+  assert.ok(validators.mcp(validMcp), "valid mcp configuration passes");
+
+  const validPlugin = {
+    name: "test-marketplace",
+    description: "test marketplace description",
+    version: "1.0.0",
+    plugins: [
+      {
+        name: "test-plugin",
+        source: ".",
+        description: "test description",
+      },
+    ],
+  };
+  assert.ok(validators.plugin(validPlugin), "valid plugin marketplace manifest passes");
 });
