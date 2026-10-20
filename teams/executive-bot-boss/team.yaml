@@ -1,0 +1,19 @@
+id: executive-bot-boss
+name: Executive Bot Boss
+lead: alfred-governance
+bots:
+  - alfred-governance
+  - jenny-ops-lead
+  - gtm-scout
+why: >
+  Managing autonomous bot fleets at enterprise scale requires unified topology
+  governance, daily operational standups, and competitor market intelligence.
+group_kickoff: >
+  @Alfred Governance audit bot roster and calculate quota burn. @Jenny Ops Lead
+  run the 5 AM operational standup and surface blockers. @GTM Scout track market
+  competitor signals and pricing diffs. No autonomous changes to active bots.
+plugins:
+  - Notion
+  - Slack
+max_bots: 4
+autonomy: L1

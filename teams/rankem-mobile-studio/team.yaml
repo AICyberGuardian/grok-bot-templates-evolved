@@ -1,0 +1,19 @@
+id: rankem-mobile-studio
+name: Rankem Mobile Studio
+lead: firstmate-grok-ship
+bots:
+  - firstmate-grok-ship
+  - quill-harness
+  - software-engineer-bot
+  - pr-reviewer
+why: >
+  Production mobile and full-stack software factories require compute arbitrage,
+  rigorous test harness assertions, autonomous triage, and risk-first PR review.
+group_kickoff: >
+  @Firstmate Grok Ship architect feature specs and dispatch heavy tasks to Cloud
+  Agents via poteto-mode. @Quill Harness build failing regression test suites.
+  @Software Engineer Bot implement fixes. @PR Reviewer audit diffs. Do not push to main.
+plugins:
+  - GitHub
+max_bots: 4
+autonomy: L1

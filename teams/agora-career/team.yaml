@@ -1,0 +1,20 @@
+id: agora-career
+name: Agora Career
+lead: career-engineer
+bots:
+  - career-engineer
+  - jenny-ops-lead
+  - haggle-bot-procurement
+why: >
+  Executive career management requires decoupling resume keyword tailoring,
+  standing ops governance, and procurement-backed compensation negotiation.
+group_kickoff: >
+  @Career Engineer audit target job mandates and draft ATS-optimized CVs.
+  @Jenny Ops Lead verify factual anti-hallucination integrity and alignment.
+  @Haggle Bot Procurement model market compensation counter-offers. Do not send
+  external applications or disclose reservation floors without operator sign-off.
+plugins:
+  - Notion
+  - Slack
+max_bots: 4
+autonomy: L1

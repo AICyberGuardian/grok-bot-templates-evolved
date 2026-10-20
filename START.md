@@ -11,13 +11,16 @@ Then run these steps. Draft and research only. Do not send, post, pay, merge, or
    allowCustom: true
    dismissOnMoveOn: true
    options:
+   - Agora Career
    - Eng
+   - Executive Bot Boss
    - Loop
    - Marketing
    - Meta
    - Ops
    - Personal
    - Product
+   - Rankem Mobile Studio
    - Research
    - Sales
    - Success
@@ -30,20 +33,23 @@ Then run these steps. Draft and research only. Do not send, post, pay, merge, or
 
 Team files:
 
+- Agora Career (Career Engineer + Jenny Ops Lead + Haggle Bot Procurement) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/agora-career/team.yaml
 - Eng (Bug Reproduction + Issue Drafter + PR Reviewer) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/eng/team.yaml
+- Executive Bot Boss (Alfred Governance + Jenny Ops Lead + GTM Scout) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/executive-bot-boss/team.yaml
 - Loop (CI Sweeper + PR Reviewer + Changelog + Evidence Packager) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/loop/team.yaml
 - Marketing (Competitor Watch + Content Remix + Newsletter Desk) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/marketing/team.yaml
 - Meta (Setup + Roster Coach + Fleet Router + Foundry) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/meta/team.yaml
 - Ops (Chief of Staff + Expense Manager + Vendor Inbox) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/ops/team.yaml
 - Personal (Inbox Triage + Calendar Defender + Subscription Audit) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/personal/team.yaml
 - Product (Product Performance + Feature Ask Collator + Launch Coordinator) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/product/team.yaml
+- Rankem Mobile Studio (Firstmate Grok Ship + Quill Harness + Software Engineer Bot + PR Reviewer) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/rankem-mobile-studio/team.yaml
 - Research (Research Desk + Cited Brief + Source Interrogator) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/research/team.yaml
 - Sales (Outbound + Meeting Prep + Call Follow-up) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/sales/team.yaml
 - Success (Account Health + Support Replies + Promise Log) — https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/success/team.yaml
 
 ## Index
 
-49 templates. No profile text here — fetch PROFILE.md.
+59 templates. No profile text here — fetch PROFILE.md.
 
 | Name | Why | Category | Lvl | Plugins | Folder |
 | --- | --- | --- | --- | --- | --- |
@@ -53,31 +59,40 @@ Team files:
 | Changelog | Draft notes from merged PRs — never tag, never publish. | engineering | L1 | GitHub | [templates\engineering\changelog/](templates\engineering\changelog/) |
 | CI Sweeper | Report failures and flakes — never merge, never hide with reruns. | engineering | L1 | GitHub | [templates\engineering\ci-sweeper/](templates\engineering\ci-sweeper/) |
 | Docs Drift | Draft the doc diff — never commit, never rewrite code to match. | engineering | L1 | GitHub | [templates\engineering\docs-drift/](templates\engineering\docs-drift/) |
+| Firstmate Grok Ship | Factory captain — compute arbitrage between Grok Bot and Cloud Agents. | engineering | L1 | GitHub | [templates\engineering\firstmate-grok-ship/](templates\engineering\firstmate-grok-ship/) |
 | Issue Drafter | Slack and repro packs become unsent issues — never auto-filed. | engineering | L1 | GitHub, Slack | [templates\engineering\issue-drafter/](templates\engineering\issue-drafter/) |
 | PR Reviewer | Review starts at the scary diff, not the title. | engineering | L1 | GitHub | [templates\engineering\pr-reviewer/](templates\engineering\pr-reviewer/) |
 | Query Helper | Draft SQL from the schema — never run writes on a live database. | engineering | L1 | GitHub | [templates\engineering\query-helper/](templates\engineering\query-helper/) |
+| Quill Harness | Verification-first test architecture and regression defense. | engineering | L1 | GitHub | [templates\engineering\quill-harness/](templates\engineering\quill-harness/) |
 | Repo Hardener | Recommend issues and PRs — never push main, never edit protection. | engineering | L1 | GitHub | [templates\engineering\repo-hardener/](templates\engineering\repo-hardener/) |
+| Software Engineer Bot | Verification-first autonomous software engineering and CI triage. | engineering | L1 | GitHub | [templates\engineering\software-engineer-bot/](templates\engineering\software-engineer-bot/) |
 | SaaS Finance | Collected, renewing, past-due — a memo, not a collections bot. | finance | L1 | Gmail | [templates\finance\saas-finance/](templates\finance\saas-finance/) |
 | Security Questionnaire | Cited drafts from the pack — the Submit button stays human. | legal | L1 | Google Drive, Notion | [templates\legal\security-questionnaire/](templates\legal\security-questionnaire/) |
 | AEO Watch | A query set on a cadence — not "hey ChatGPT, do we show up". | marketing | L1 | — | [templates\marketing\aeo-watch/](templates\marketing\aeo-watch/) |
 | Brand Watch | A reading pile, not a reply thread. | marketing | L1 | Slack, X | [templates\marketing\brand-watch/](templates\marketing\brand-watch/) |
 | Competitor Watch | Alert only when the page actually changed. Silence is a result. | marketing | L1 | Slack | [templates\marketing\competitor-watch/](templates\marketing\competitor-watch/) |
 | Content Remix | One draft in. A set of variants out. Nothing ships. | marketing | L1 | Notion | [templates\marketing\content-remix/](templates\marketing\content-remix/) |
+| GTM Scout | Market intelligence and competitor pricing diffs before your standup. | marketing | L1 | Slack | [templates\marketing\gtm-scout/](templates\marketing\gtm-scout/) |
 | Newsletter Desk | The issue is written. The send button stays with the owner. | marketing | L1 | Gmail, Google Docs | [templates\marketing\newsletter-desk/](templates\marketing\newsletter-desk/) |
 | Paid Media | Numbers and a Slack draft. The budget does not move itself. | marketing | L1 | Slack, Google Drive | [templates\marketing\paid-media/](templates\marketing\paid-media/) |
+| SEO & AEO Desk | Search engine and AI answer visibility — writer-ready briefs, no publishing. | marketing | L1 | Notion | [templates\marketing\seo-aeo-desk/](templates\marketing\seo-aeo-desk/) |
 | Foundry | One job in, a shippable Bot recipe out — not a cute persona. | meta | L1 | — | [templates\meta\foundry/](templates\meta\foundry/) |
 | Memory Gardener | Correct stale memory against a source — do not wipe the role. | meta | L1 | — | [templates\meta\gardener/](templates\meta\gardener/) |
 | Setup | Paste START.md, tap a team, get a roster — not a catalog dump. | meta | L1 | — | [templates\meta\installer/](templates\meta\installer/) |
 | Roster Coach | Cut and merge first — never grow the fleet past the ask. | meta | L1 | — | [templates\meta\roster/](templates\meta\roster/) |
 | Fleet Router | Pick one owner, hand off, go silent — never do the work. | meta | L1 | — | [templates\meta\router/](templates\meta\router/) |
 | Share Sanitizer | Redact first — the share link must not carry secrets or customers. | meta | L1 | — | [templates\meta\sanitizer/](templates\meta\sanitizer/) |
+| Alfred Governance | Lean fleet topology — default to zero new bots. | ops | L1 | Notion, Slack | [templates\ops\alfred-governance/](templates\ops\alfred-governance/) |
 | Chief of Staff | Only items that map to the priority list — with a decision flag. | ops | L1 | Slack, Gmail, Google Calendar | [templates\ops\chief-of-staff/](templates\ops\chief-of-staff/) |
 | Cloud Spend | Movers and recommendations — the console stays closed. | ops | L1 | Gmail, Google Drive | [templates\ops\cloud-spend/](templates\ops\cloud-spend/) |
 | Expense Manager | Totals that reconcile — exceptions that cite the signed policy. | ops | L1 | Gmail, Google Drive | [templates\ops\expense-manager/](templates\ops\expense-manager/) |
+| Haggle Bot Procurement | Know vendor spend cold — find savings with evidence. | ops | L1 | Notion, Slack | [templates\ops\haggle-bot-procurement/](templates\ops\haggle-bot-procurement/) |
 | Incident Desk | A timeline a skeptic can audit — not a production console. | ops | L1 | Slack, GitHub | [templates\ops\incident-desk/](templates\ops\incident-desk/) |
+| Jenny Ops Lead | Operational conscience of the fleet — alignment over churn. | ops | L1 | Notion, Slack | [templates\ops\jenny-ops-lead/](templates\ops\jenny-ops-lead/) |
 | New Hire Ramp | A week-one plan a manager can edit — invites stay in draft. | ops | L1 | Google Calendar, Slack | [templates\ops\new-hire-ramp/](templates\ops\new-hire-ramp/) |
 | Vendor Inbox | A vendor work list, not a chase bot. | ops | L1 | Gmail, Google Drive | [templates\ops\vendor-inbox/](templates\ops\vendor-inbox/) |
 | Calendar Defender | Draft the decline. Never move the meeting yourself. | personal | L1 | Google Calendar, Slack | [templates\personal\calendar-defender/](templates\personal\calendar-defender/) |
+| Career Engineer | ATS-optimized CV architecture and verified mandate negotiation. | personal | L1 | Notion | [templates\personal\career-engineer/](templates\personal\career-engineer/) |
 | Inbox Triage | Buckets and drafts — never send, never delete, never unsubscribe. | personal | L1 | Gmail | [templates\personal\inbox-triage/](templates\personal\inbox-triage/) |
 | Subscription Audit | Evidence of last use, then a list — you click cancel. | personal | L1 | Gmail | [templates\personal\subscription-audit/](templates\personal\subscription-audit/) |
 | Travel Desk | Sanity-check the trip. Never book. Never pay. | personal | L1 | Gmail, Google Calendar | [templates\personal\travel-desk/](templates\personal\travel-desk/) |
@@ -96,6 +111,7 @@ Team files:
 | Account Health | Evidence-ranked watch list — no customer mail, no CRM edits. | support | L1 | Slack, Gmail | [templates\support\account-health/](templates\support\account-health/) |
 | Promise Log | Quotes and dates — not a customer recap email. | support | L1 | Slack, Google Drive | [templates\support\promise-log/](templates\support\promise-log/) |
 | Support Replies | A DRAFT reply with a policy cite — the Send button stays yours. | support | L1 | Gmail | [templates\support\support-replies/](templates\support\support-replies/) |
+| Support Triage Bot | Rapid customer support clustering, symptom reproduction, and response drafting. | support | L1 | Zendesk, Slack | [templates\support\triage-bot/](templates\support\triage-bot/) |
 
 ## Rules
 
