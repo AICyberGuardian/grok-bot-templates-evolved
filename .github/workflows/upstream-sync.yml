@@ -1,0 +1,90 @@
+name: Upstream Sync
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Every Monday at 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      upstream_branch:
+        description: "Upstream branch to sync from"
+        required: true
+        default: "main"
+      create_pr:
+        description: "Whether to create a PR instead of pushing directly to main"
+        type: boolean
+        default: true
+
+jobs:
+  sync:
+    name: Sync Upstream Changes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Configure Git Identity
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Setup and Fetch Upstream
+        run: |
+          git remote add upstream https://github.com/cobusgreyling/grok-bot-templates.git || git remote set-url upstream https://github.com/cobusgreyling/grok-bot-templates.git
+          git fetch upstream ${{ github.event.inputs.upstream_branch || 'main' }}
+
+      - name: Check for New Upstream Commits
+        id: check_upstream
+        run: |
+          UPSTREAM_REF="upstream/${{ github.event.inputs.upstream_branch || 'main' }}"
+          BEHIND=$(git rev-list --count HEAD..$UPSTREAM_REF || echo "0")
+          echo "behind=$BEHIND" >> $GITHUB_OUTPUT
+          if [ "$BEHIND" -eq 0 ]; then
+            echo "Repository is already aligned with $UPSTREAM_REF. No merge required."
+          else
+            echo "Behind upstream by $BEHIND commits. Proceeding to merge."
+          fi
+
+      - name: Merge Upstream & Rebuild
+        if: steps.check_upstream.outputs.behind != '0'
+        run: |
+          UPSTREAM_REF="upstream/${{ github.event.inputs.upstream_branch || 'main' }}"
+          git merge $UPSTREAM_REF --no-edit -m "chore(sync): merge upstream updates from cobusgreyling/grok-bot-templates"
+          npm ci
+          npm run build
+          npm run plugins
+          npm run ci
+
+      - name: Commit Drift-Free Build Artifacts
+        if: steps.check_upstream.outputs.behind != '0'
+        run: |
+          git add templates skills routines docs/ .grok-plugin/ catalog/ START.md
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "chore(sync): recompile dual-format catalog, pages, and plugins after upstream merge"
+          fi
+
+      - name: Create Pull Request or Push
+        if: steps.check_upstream.outputs.behind != '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ github.event.inputs.create_pr }}" = "false" ]; then
+            git push origin main
+          else
+            BRANCH_NAME="sync/upstream-$(date +%Y%m%d-%H%M%S)"
+            git checkout -b "$BRANCH_NAME"
+            git push origin "$BRANCH_NAME"
+            gh pr create \
+              --title "chore(sync): merge upstream updates ($(date +%Y-%m-%d))" \
+              --body "Automated upstream synchronization against \`cobusgreyling/grok-bot-templates\`. Rebuilt dual-format templates, static site, and verified all CI gates." \
+              --base main \
+              --head "$BRANCH_NAME"
+          fi
