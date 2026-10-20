@@ -11,6 +11,7 @@ import { START_URL } from "../lib/urls.mjs";
 import { renderProfile, writeTemplateDocs } from "../lib/render.mjs";
 import { writeSkillDocs } from "../lib/render-skill.mjs";
 import { writeRoutineDocs } from "../lib/render-routine.mjs";
+import { templateToJson } from "../scripts/build-json-templates.mjs";
 
 const VERSION = JSON.parse(
   fs.readFileSync(new URL("../package.json", import.meta.url), "utf8")
@@ -56,6 +57,8 @@ Usage:
   grokbot doctor
   grokbot start
   grokbot new <slug> --category <cat> [--out DIR]
+  grokbot export-json [id|--all] [--out DIR]
+  grokbot mcp-init <server-name>
   grokbot catalog
   grokbot version
 
@@ -495,6 +498,133 @@ function cmdCatalog(loaded) {
   return 0;
 }
 
+function cmdExportJson(a, loaded) {
+  const id = a._[1];
+  if (!id || a.flags.all) {
+    const list = loaded.templates.map((t) => {
+      const profilePath = path.join(t._dir, "PROFILE.md");
+      const profile = fs.existsSync(profilePath)
+        ? fs.readFileSync(profilePath, "utf8")
+        : renderProfile(t);
+      return templateToJson(t, profile);
+    });
+    if (a.flags.out) {
+      const outDir = path.resolve(process.cwd(), a.flags.out);
+      if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+      for (const item of list) {
+        fs.writeFileSync(
+          path.join(outDir, `${item.id}.template.json`),
+          JSON.stringify(item, null, 2) + "\n"
+        );
+      }
+      console.log(`exported ${list.length} json templates to ${outDir}`);
+      return 0;
+    }
+    console.log(JSON.stringify(list, null, 2));
+    return 0;
+  }
+
+  const t = findTemplate(loaded, id);
+  if (!t) {
+    console.error(`not found: ${id}`);
+    return 1;
+  }
+  const profilePath = path.join(t._dir, "PROFILE.md");
+  const profile = fs.existsSync(profilePath)
+    ? fs.readFileSync(profilePath, "utf8")
+    : renderProfile(t);
+  const json = templateToJson(t, profile);
+  if (a.flags.out) {
+    const outDir = path.resolve(process.cwd(), a.flags.out);
+    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+    const target = path.join(outDir, `${t.id}.template.json`);
+    fs.writeFileSync(target, JSON.stringify(json, null, 2) + "\n");
+    console.log(`exported ${t.id} to ${target}`);
+    return 0;
+  }
+  console.log(JSON.stringify(json, null, 2));
+  return 0;
+}
+
+function cmdMcpInit(a) {
+  const name = a._[1];
+  if (!name) {
+    console.error("usage: grokbot mcp-init <server-name>");
+    return 1;
+  }
+  const dir = path.join(process.cwd(), "mcp-servers", name);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+
+  const pyFile = path.join(dir, `${name.replace(/-/g, "_")}_mcp.py`);
+  const reqFile = path.join(dir, "requirements.txt");
+  const bootFile = path.join(dir, "bootstrap.sh");
+  const cursorDir = path.join(dir, ".cursor");
+  const mcpJson = path.join(cursorDir, "mcp.json");
+
+  if (!fs.existsSync(pyFile)) {
+    fs.writeFileSync(
+      pyFile,
+      `#!/usr/bin/env python3
+"""
+FastMCP Server: ${name}
+"""
+from mcp.server.fastmcp import FastMCP
+
+mcp = FastMCP("${name}")
+
+@mcp.tool()
+def ping() -> str:
+    """Returns pong status."""
+    return "pong"
+
+if __name__ == "__main__":
+    mcp.run(transport="stdio")
+`
+    );
+  }
+
+  if (!fs.existsSync(reqFile)) {
+    fs.writeFileSync(reqFile, "mcp>=1.0.0\npydantic>=2.0\nhttpx>=0.25.0\n");
+  }
+
+  if (!fs.existsSync(bootFile)) {
+    fs.writeFileSync(
+      bootFile,
+      `#!/usr/bin/env bash
+set -euo pipefail
+DIR="$(cd "$(dirname "\${BASH_SOURCE[0]}")" && pwd)"
+VENV="$DIR/.venv"
+if [ ! -d "$VENV" ]; then
+    python3 -m venv "$VENV"
+    "$VENV/bin/pip" install -r "$DIR/requirements.txt"
+fi
+`
+    );
+  }
+
+  if (!fs.existsSync(cursorDir)) fs.mkdirSync(cursorDir, { recursive: true });
+  if (!fs.existsSync(mcpJson)) {
+    fs.writeFileSync(
+      mcpJson,
+      JSON.stringify(
+        {
+          mcpServers: {
+            [name]: {
+              command: "python3",
+              args: [`/workspace/mcp-servers/${name}/${name.replace(/-/g, "_")}_mcp.py`],
+            },
+          },
+        },
+        null,
+        2
+      ) + "\n"
+    );
+  }
+
+  console.log(`scaffolded FastMCP daemon in mcp-servers/${name}`);
+  return 0;
+}
+
 function main(argv) {
   const a = args(argv);
   const cmd = a._[0] || "help";
@@ -530,6 +660,10 @@ function main(argv) {
       return cmdNew(a);
     case "catalog":
       return cmdCatalog(loaded);
+    case "export-json":
+      return cmdExportJson(a, loaded);
+    case "mcp-init":
+      return cmdMcpInit(a);
     case "render": {
       const scores = new Map(scoreAll(loaded.templates).map((s) => [s.id, s]));
       for (const t of loaded.templates) writeTemplateDocs(t, scores.get(t.id));

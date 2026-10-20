@@ -78,3 +78,13 @@ test("catalog json includes start_url", () => {
   assert.ok(j.count >= 6);
   assert.ok(j.items.some((t) => t.id === "pr-reviewer" && t.profile_url.includes("PROFILE.md")));
 });
+
+test("export-json outputs valid xAI template schema", () => {
+  const r = run(["export-json", "pr-reviewer"]);
+  assert.equal(r.status, 0);
+  const j = JSON.parse(r.stdout);
+  assert.equal(j.$schema, "https://x.ai/schemas/grok-bot/template.v1.json");
+  assert.equal(j.id, "pr-reviewer");
+  assert.ok(Array.isArray(j.curated_memories));
+  assert.ok(Array.isArray(j.plugins));
+});
