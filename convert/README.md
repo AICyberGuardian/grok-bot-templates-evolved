@@ -11,6 +11,8 @@ Memory and local files do **not** move. Only the operating contract.
 | Claude Code / CLAUDE.md | [claude.md](./claude.md) |
 | Cursor rules | [cursor.md](./cursor.md) |
 | OpenClaw / Hermes SOUL.md | [openclaw.md](./openclaw.md) |
+| Google Antigravity / Gemini CLI | [gemini.md](./gemini.md) |
+| Nous Research Hermes Agent | [hermes.md](./hermes.md) |
 
 Always finish with:
 
