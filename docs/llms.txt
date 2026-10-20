@@ -7,6 +7,7 @@ https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md
 
 Catalog JSON: https://cobusgreyling.github.io/grok-bot-templates/catalog.json
 API: https://cobusgreyling.github.io/grok-bot-templates/api/v1/index.json
+Canonical Corpus (32 Chapters): https://raw.githubusercontent.com/AICyberGuardian/grok-bot-templates-evolved/main/docs/grok-bot-canonical.llm.md
 Spec: https://github.com/cobusgreyling/grok-bot-templates/blob/main/SPEC.md
 Site: https://cobusgreyling.github.io/grok-bot-templates/
 
