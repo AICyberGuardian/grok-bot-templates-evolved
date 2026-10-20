@@ -1,0 +1,14 @@
+id: fastmcp-rebootstrap
+name: FastMCP Re-Bootstrap Pattern
+summary: >
+  Deploy FastMCP daemons and virtualenvs under persistent /workspace storage
+  with an idempotent bootstrap script to survive container Updates and Recovers.
+rule: >
+  Store FastMCP code and virtual environments under /workspace/<daemon>/. Run
+  bootstrap.sh upon turn initialization to restore missing packages.
+anti_pattern: >
+  Installing system Python packages in /usr/local without re-bootstrap scripting.
+source: https://docs.x.ai/grok-bot/mcp-persistence
+applies_to:
+  - templates
+  - routines

@@ -1,0 +1,14 @@
+id: standing-boundary-l1-default
+name: Standing Boundary L1 Default
+summary: >
+  Enforce autonomy level L1 Draft as the mandatory default for all new bots
+  and routines during their initial seven days of operation.
+rule: >
+  Every new template must begin at L1. Promotion to L2 or L3 requires two
+  consecutive defect-free runs and explicit owner promotion.
+anti_pattern: >
+  Deploying autonomous write or payment actions on day one without oversight.
+source: https://docs.x.ai/grok-bot/autonomy-levels
+applies_to:
+  - templates
+  - routines

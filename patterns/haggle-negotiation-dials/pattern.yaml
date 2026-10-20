@@ -1,0 +1,14 @@
+id: haggle-negotiation-dials
+name: Haggle Bot Negotiation Dials
+summary: >
+  Adopt high-leverage compensation anchoring, silence tolerance, and warm-tone
+  firm-number dialectic in recruiter negotiations.
+rule: >
+  Never disclose reservation floors prematurely. Anchor first with verified
+  market benchmarks and offer trade-offs rather than unreciprocated concessions.
+anti_pattern: >
+  Immediately conceding to initial recruiter budget caps without exploring total value.
+source: https://docs.x.ai/grok-bot/executive-playbook
+applies_to:
+  - templates
+  - skills

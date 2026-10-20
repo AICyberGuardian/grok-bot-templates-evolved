@@ -1,0 +1,14 @@
+id: zero-node-bootstrapping
+name: Zero-Node Remote Bootstrapping
+summary: >
+  Provide zero-dependency curl and raw GitHub Pages START.md bootstrapping
+  so operators can install complete bot teams without Node.js.
+rule: >
+  Always maintain START.md as a 1-paste URL compatible with the native Grok Bot
+  question widget. Never require local npm install as the primary entry point.
+anti_pattern: >
+  Forcing non-developer users to install Node.js and run npm CLI commands to start.
+source: https://docs.x.ai/grok-bot/getting-started
+applies_to:
+  - templates
+  - teams

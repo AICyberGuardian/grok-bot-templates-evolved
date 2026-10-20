@@ -1,0 +1,14 @@
+id: sepia-humanizer-filter
+name: Sepia Humanizer Filter Pattern
+summary: >
+  Filter AI-generated public communications and executive resumes through
+  syntactic de-slop rules to remove telltale robotic cadences.
+rule: >
+  Strip formulaic tri-colons, empty buzzwords, and repetitive transitions from
+  outbound drafts while preserving 100% of factual substance.
+anti_pattern: >
+  Publishing raw LLM copy filled with 'Furthermore', 'Moreover', and 'crucially'.
+source: https://docs.x.ai/grok-bot/content-integrity
+applies_to:
+  - templates
+  - skills

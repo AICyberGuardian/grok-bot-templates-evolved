@@ -1,0 +1,14 @@
+id: compute-arbitrage-poteto
+name: Compute Arbitrage Poteto Mode
+summary: >
+  Delegate long-running refactors, whole-repo builds, and test sweeps exceeding
+  five minutes to Cursor Cloud Agents while Grok Bot handles orchestration.
+rule: >
+  Tasks touching >20 files or taking >5 minutes must be delegated to background
+  cloud workers. Review diffs in Grok Bot before merge.
+anti_pattern: >
+  Running 45-minute compiler builds directly inside interactive Grok Bot turns.
+source: https://docs.x.ai/grok-bot/cloud-execution
+applies_to:
+  - templates
+  - routines

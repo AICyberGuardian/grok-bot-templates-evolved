@@ -1,0 +1,14 @@
+id: slack-listener-guard
+name: Slack Listener Quota Guard
+summary: >
+  Protect Grok Bot against infinite conversational message loops and empty-phrase
+  polling that burn weekly plan quotas prematurely.
+rule: >
+  Require explicit mention or bot keyword trigger on external Slack/Discord
+  integrations. Terminate unattended loops immediately.
+anti_pattern: >
+  Configuring open-ended ambient channel listeners with unconstrained turn limits.
+source: https://docs.x.ai/grok-bot/integrations-and-quotas
+applies_to:
+  - templates
+  - routines

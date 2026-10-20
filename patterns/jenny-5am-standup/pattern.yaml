@@ -1,0 +1,14 @@
+id: jenny-5am-standup
+name: Jenny 5 AM Standup Cadence
+summary: >
+  Non-coding operations lead cadence running at 5 AM to synchronize milestones,
+  identify blockers, and align specialist bots before the business day.
+rule: >
+  Run read-only operational standup at 5 AM UTC/local. Synthesize yesterday's
+  achievements and flag dependencies without writing code.
+anti_pattern: >
+  Interrupting active engineering bots during business hours for status updates.
+source: https://docs.x.ai/grok-bot/operations-playbook
+applies_to:
+  - templates
+  - routines

@@ -1,0 +1,13 @@
+id: firecracker-tristate-recovery
+name: Firecracker Tri-State Recovery Matrix
+summary: >
+  Enforce systematic triage between Update, Recover, and Reset when managing
+  Grok Bot Firecracker microVM container degradation.
+rule: >
+  Use Update for base image patches, Recover for process faults preserving
+  /workspace, and Reset only after off-container backup confirmation.
+anti_pattern: >
+  Executing container Reset on minor tool errors, permanently deleting /workspace data.
+source: https://docs.x.ai/grok-bot/firecracker-lifecycle
+applies_to:
+  - templates

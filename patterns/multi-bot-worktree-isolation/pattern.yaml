@@ -1,0 +1,14 @@
+id: multi-bot-worktree-isolation
+name: Multi-Bot Worktree Isolation
+summary: >
+  Isolate concurrent Grok Bots operating in the same repository into separate
+  git worktrees or subdirectories to prevent checkout conflicts.
+rule: >
+  Assign each specialist bot a distinct working directory (/workspace/<bot-id>/)
+  or dedicated git worktree rather than sharing a dirty working tree.
+anti_pattern: >
+  Allowing two concurrent bots to execute conflicting git checkout and commit commands.
+source: https://docs.x.ai/grok-bot/multi-bot-coordination
+applies_to:
+  - templates
+  - teams
