@@ -1,0 +1,20 @@
+id: anti-hallucination-gate
+name: Anti-Hallucination Gate
+when_to_use: >
+  Reviewing or generating candidate resumes, executive bios, technical claims,
+  metrics, or mandate deliverables where factual accuracy must be 100% verified.
+inputs:
+  - Draft resume, article, or deliverable
+  - Canonical career history, verified metrics, or authoritative knowledge corpus
+sequence:
+  - Extract all dates, company names, certifications, tooling claims, and numerical metrics.
+  - Cross-check each entity against canonical records; flag any unverified or synthetic claims.
+  - Replace vague buzzwords with quantifiable, verified outcomes.
+  - Enforce past tense for completed roles and present tense for current responsibilities.
+  - Tag every unconfirmed data point with [À vérifier / To verify] rather than guessing.
+validate: >
+  Zero invented client names, dates, metrics, or credentials. All numbers match canonical sources.
+returns: >
+  Integrity verification report listing verified claims, purged hallucinations, and flagged items.
+approval: >
+  Never publish or transmit external resumes or profiles without explicit user confirmation of flagged points.

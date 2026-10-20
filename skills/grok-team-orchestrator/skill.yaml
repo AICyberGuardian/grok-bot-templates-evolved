@@ -1,0 +1,20 @@
+id: grok-team-orchestrator
+name: Grok Team Orchestrator
+when_to_use: >
+  Coordinating multi-bot teams (2 to 4 bots) sharing a workspace, managing visible handoffs,
+  and preventing cross-bot interference.
+inputs:
+  - Multi-bot team definition (teams/*.yaml)
+  - Work stream tasks and deliverables
+sequence:
+  - Verify team size is between 2 and 4 bots; identify designated Lead Bot.
+  - Assign explicit per-bot workspace directories (/workspace/<bot-id>/) to prevent file collisions.
+  - Define visible handoff triggers between specialist bots.
+  - Ensure shared computer boundaries are recognized (shared browser, shared credentials).
+  - Orchestrate sequential handoffs; keep autonomy at L1 during initial deployment.
+validate: >
+  No circular handoff loops. Each bot has one clear job. All bots listed in team definition.
+returns: >
+  Team orchestration roster with handoff routing table and execution schedule.
+approval: >
+  Never spawn more than 4 bots in a team without human operator approval.

@@ -1,0 +1,20 @@
+id: cv-generator
+name: CV Generator
+when_to_use: >
+  Creating or refactoring executive, senior engineering, or consulting resumes
+  into ATS-compliant single-column layouts within a strict 2-page budget.
+inputs:
+  - Candidate profile, history, and target role specification
+  - Design constraints (single-column, high-contrast typography, KPI callout cards)
+sequence:
+  - Draft executive summary highlighting core engineering differentiator and years of experience.
+  - Construct 3-pillar KPI callout card section highlighting verified quantitative wins.
+  - Structure chronological work history with quantifiable bullet points (Situation, Task, Action, Result).
+  - Include technical competency inventory categorized by domain (Endpoint, Cloud, Scripting, DevOps).
+  - Format strictly for 2.0 pages, eliminating orphan lines and page-3 spillovers.
+validate: >
+  Strict 2-page length budget respected. Single-column body layout. No buzzwords.
+returns: >
+  Complete ATS-optimized markdown CV draft ready for PDF compilation or word processor import.
+approval: >
+  Never submit CV directly to recruiters or job boards without candidate sign-off.

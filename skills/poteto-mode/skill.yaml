@@ -1,0 +1,20 @@
+id: poteto-mode
+name: Poteto Mode Compute Arbitrage
+when_to_use: >
+  A coding or refactoring task exceeds 5 minutes of continuous runtime or spans
+  more than 20 files, requiring compute arbitrage to Cursor Cloud Agents.
+inputs:
+  - Task specification and target repository
+  - Task complexity estimate (files changed, runtime, build requirements)
+sequence:
+  - "Estimate task scope: if files > 20 or runtime > 5m, trigger compute arbitrage."
+  - Package task requirements, test specifications, and acceptance criteria into GROK_SHIP.md.
+  - Dispatch task to background Cursor Cloud Agent or isolated worker branch.
+  - Monitor worker completion and pull review package back into Grok Bot for risk audit.
+  - Execute PR Reviewer pattern before merging.
+validate: >
+  Worker diff contains failing test first, clean commit history, and passes all local verification.
+returns: >
+  Delegation dispatch pack, worker status report, and final review package.
+approval: >
+  Never merge cloud agent branches into main without operator review.

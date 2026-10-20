@@ -1,0 +1,20 @@
+id: sepia
+name: Sepia Humanizer
+when_to_use: >
+  Refactoring AI-generated prose, technical articles, resumes, release notes,
+  or customer communications to strip artificial syntactic markers and formulaic cadence.
+inputs:
+  - Draft markdown text or AI-generated copy
+  - Domain context (executive bio, engineering postmortem, release notes)
+sequence:
+  - "Scan for AI syntactic markers: formulaic tri-colons, empty buzzwords, overly balanced antitheses."
+  - Eliminate repetitive transitional fluff ('Furthermore', 'Moreover', 'In summary', 'Crucially').
+  - Vary sentence length and rhythmic cadence; inject authentic concrete domain specifics.
+  - Replace abstract assertions with specific nouns, verifiable numbers, and active verbs.
+  - Preserve all underlying technical facts, citations, and functional code blocks untouched.
+validate: >
+  Text reads naturally with human variance; zero loss of factual accuracy or technical substance.
+returns: >
+  Humanized copy accompanied by diagnostic diff highlighting purged AI patterns.
+approval: >
+  Never modify functional code, regex expressions, or API keys during text humanization.

@@ -1,0 +1,20 @@
+id: rate-negotiator
+name: Rate Negotiator
+when_to_use: >
+  Modeling compensation scenarios, analyzing recruiter compensation bands,
+  or drafting counter-offer scripts for senior engineering and consulting mandates.
+inputs:
+  - Job offer, recruiter compensation range, or mandate RFP
+  - Market benchmark data ($115k-$140k+ CAD FTE, $95-$125/hr B2B contract)
+sequence:
+  - "Determine employment structure: full-time permanent (FTE) vs independent B2B contract."
+  - Calculate total compensation equivalency (base salary, bonus, healthcare, pension, vacation).
+  - Establish aspirational anchor, target outcome, and strict reservation floor.
+  - Draft phone scripts and email counter-offers adopting 'Warm tone, firm numbers'.
+  - Prepare deflection techniques for premature salary expectation queries.
+validate: >
+  All compensation figures grounded in verified market ranges; reservation floor never disclosed prematurely.
+returns: >
+  Compensation comparison model, counter-offer scenario matrix, and verbatim negotiation scripts.
+approval: >
+  Never send compensation counters directly to recruiters; operator conducts all live communications.

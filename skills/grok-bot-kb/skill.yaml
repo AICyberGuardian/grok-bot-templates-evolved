@@ -1,0 +1,19 @@
+id: grok-bot-kb
+name: Grok Bot Knowledge Base
+when_to_use: >
+  Querying architectural rules, Firecracker microVM container invariants, quotas,
+  or FastMCP deployment specifications from the 32-chapter canonical corpus.
+inputs:
+  - Architectural or operational query
+  - Canonical corpus at docs/grok-bot-canonical.llm.md
+sequence:
+  - Inspect query for domain area (VM isolation, quotas, FastMCP, multi-bot teams, Slack integration).
+  - Extract relevant chapter sections, configuration schemas, and recovery protocols.
+  - Identify potential failure modes (e.g. empty-phrase Slack quota exhaustion, microVM reset wipes).
+  - Formulate verified technical response citing chapter references and code examples.
+validate: >
+  All configuration paths, environment variables, and CLI commands match the 32-chapter canonical corpus.
+returns: >
+  Verified technical brief with chapter citations, configuration snippets, and operational caveats.
+approval: >
+  Never execute container recovery or state wipe commands without explicit operator consent.

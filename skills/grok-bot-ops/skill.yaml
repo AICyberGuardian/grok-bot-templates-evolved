@@ -1,0 +1,19 @@
+id: grok-bot-ops
+name: Grok Bot Operations
+when_to_use: >
+  Managing Grok Bot microVM containers, persistent workspace state, FastMCP daemon health,
+  and container recovery procedures (Update vs Recover vs Reset).
+inputs:
+  - Container status or health check diagnostics
+  - /workspace directory tree and disk capacity
+sequence:
+  - Run FastMCP disk audit to ensure /workspace storage is below 85% utilization.
+  - Check for running daemon processes and re-bootstrap virtual environments if missing.
+  - Diagnose container degradation using the Tri-State Recovery Matrix.
+  - Recommend Update for base image refresh, Recover for VM fault recovery, or Reset for total wipe.
+validate: >
+  Durable data preserved under /workspace/<id>/; bootstrap.sh tested and executable.
+returns: >
+  Container health diagnostic report with storage usage, process status, and recommended recovery action.
+approval: >
+  Never execute container Reset without verifying off-container backup of /workspace.
