@@ -1,7 +1,20 @@
 {
   "api_version": "v1",
-  "count": 10,
+  "count": 13,
   "items": [
+    {
+      "id": "agora-career",
+      "name": "Agora Career",
+      "lead": "career-engineer",
+      "bots": [
+        "career-engineer",
+        "jenny-ops-lead",
+        "haggle-bot-procurement"
+      ],
+      "why": "Executive career management requires decoupling resume keyword tailoring, standing ops governance, and procurement-backed compensation negotiation.\n",
+      "autonomy": "L1",
+      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/agora-career/team.yaml"
+    },
     {
       "id": "eng",
       "name": "Eng",
@@ -14,6 +27,19 @@
       "why": "Staging reports stall when repro, the unsent issue, and the risk review live in one undifferentiated chat.\n",
       "autonomy": "L1",
       "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/eng/team.yaml"
+    },
+    {
+      "id": "executive-bot-boss",
+      "name": "Executive Bot Boss",
+      "lead": "alfred-governance",
+      "bots": [
+        "alfred-governance",
+        "jenny-ops-lead",
+        "gtm-scout"
+      ],
+      "why": "Managing autonomous bot fleets at enterprise scale requires unified topology governance, daily operational standups, and competitor market intelligence.\n",
+      "autonomy": "L1",
+      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/executive-bot-boss/team.yaml"
     },
     {
       "id": "loop",
@@ -94,6 +120,20 @@
       "why": "Latency, Slack asks, and launch day collide unless one Bot owns evidence, one clusters asks, and one refuses to publish.\n",
       "autonomy": "L1",
       "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/product/team.yaml"
+    },
+    {
+      "id": "rankem-mobile-studio",
+      "name": "Rankem Mobile Studio",
+      "lead": "firstmate-grok-ship",
+      "bots": [
+        "firstmate-grok-ship",
+        "quill-harness",
+        "software-engineer-bot",
+        "pr-reviewer"
+      ],
+      "why": "Production mobile and full-stack software factories require compute arbitrage, rigorous test harness assertions, autonomous triage, and risk-first PR review.\n",
+      "autonomy": "L1",
+      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/rankem-mobile-studio/team.yaml"
     },
     {
       "id": "research",

@@ -3,7 +3,7 @@
   "api_version": "v1",
   "schema_revision": "2026-08-29",
   "status_url": "https://cobusgreyling.github.io/grok-bot-templates/api/v1/status.json",
-  "count": 49,
+  "count": 59,
   "start_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/START.md",
   "items": [
     {
@@ -170,6 +170,35 @@
       ]
     },
     {
+      "id": "firstmate-grok-ship",
+      "name": "Firstmate Grok Ship",
+      "title": "Software Factory Captain & Cloud Agent Orchestrator",
+      "category": "engineering",
+      "autonomy": "L1",
+      "tagline": "Factory captain — compute arbitrage between Grok Bot and Cloud Agents.",
+      "why": "Heavy compilation and large refactors exhaust interactive Grok Bot turns. Firstmate coordinates cloud agent compilation while keeping management lean.\n",
+      "plugins": [
+        "GitHub"
+      ],
+      "featured": true,
+      "official_use_case": false,
+      "path": "templates\\engineering\\firstmate-grok-ship",
+      "profile_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\\engineering\\firstmate-grok-ship/PROFILE.md",
+      "tree_url": "https://github.com/cobusgreyling/grok-bot-templates/tree/main/templates\\engineering\\firstmate-grok-ship",
+      "share_url": null,
+      "score": 100,
+      "grade": "A",
+      "ready": true,
+      "tags": [
+        "engineering",
+        "factory",
+        "cloud-agents",
+        "poteto-mode",
+        "orchestrator",
+        "l1"
+      ]
+    },
+    {
       "id": "issue-drafter",
       "name": "Issue Drafter",
       "title": "Unsent GitHub issue writer",
@@ -252,6 +281,35 @@
       ]
     },
     {
+      "id": "quill-harness",
+      "name": "Quill Harness",
+      "title": "Enterprise Test Harness & Regression Architect",
+      "category": "engineering",
+      "autonomy": "L1",
+      "tagline": "Verification-first test architecture and regression defense.",
+      "why": "Unverified code commits and flaky tests create hidden regressions. Quill Harness enforces red-green-refactor discipline and strict test isolation.\n",
+      "plugins": [
+        "GitHub"
+      ],
+      "featured": true,
+      "official_use_case": false,
+      "path": "templates\\engineering\\quill-harness",
+      "profile_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\\engineering\\quill-harness/PROFILE.md",
+      "tree_url": "https://github.com/cobusgreyling/grok-bot-templates/tree/main/templates\\engineering\\quill-harness",
+      "share_url": null,
+      "score": 100,
+      "grade": "A",
+      "ready": true,
+      "tags": [
+        "engineering",
+        "testing",
+        "harness",
+        "tdd",
+        "regression",
+        "l1"
+      ]
+    },
+    {
       "id": "repo-hardener",
       "name": "Repo Hardener",
       "title": "Security and hygiene recommender",
@@ -275,6 +333,35 @@
         "github",
         "security",
         "hygiene",
+        "l1"
+      ]
+    },
+    {
+      "id": "software-engineer-bot",
+      "name": "Software Engineer Bot",
+      "title": "Autonomous Software & Test Harness Engineer",
+      "category": "engineering",
+      "autonomy": "L1",
+      "tagline": "Verification-first autonomous software engineering and CI triage.",
+      "why": "Autonomous code generation without rigorous local-first verification introduces breaking regressions. This Bot enforces evidence before assertions.\n",
+      "plugins": [
+        "GitHub"
+      ],
+      "featured": true,
+      "official_use_case": false,
+      "path": "templates\\engineering\\software-engineer-bot",
+      "profile_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\\engineering\\software-engineer-bot/PROFILE.md",
+      "tree_url": "https://github.com/cobusgreyling/grok-bot-templates/tree/main/templates\\engineering\\software-engineer-bot",
+      "share_url": null,
+      "score": 100,
+      "grade": "A",
+      "ready": true,
+      "tags": [
+        "engineering",
+        "software",
+        "triage",
+        "ci",
+        "verification",
         "l1"
       ]
     },
@@ -437,6 +524,35 @@
       ]
     },
     {
+      "id": "gtm-scout",
+      "name": "GTM Scout",
+      "title": "Market Intelligence & Competitor Analyst",
+      "category": "marketing",
+      "autonomy": "L1",
+      "tagline": "Market intelligence and competitor pricing diffs before your standup.",
+      "why": "Competitor pricing changes and product releases happen quietly. GTM Scout surfaces verified market shifts and enriches target accounts with proof.\n",
+      "plugins": [
+        "Slack"
+      ],
+      "featured": true,
+      "official_use_case": false,
+      "path": "templates\\marketing\\gtm-scout",
+      "profile_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\\marketing\\gtm-scout/PROFILE.md",
+      "tree_url": "https://github.com/cobusgreyling/grok-bot-templates/tree/main/templates\\marketing\\gtm-scout",
+      "share_url": null,
+      "score": 100,
+      "grade": "A",
+      "ready": true,
+      "tags": [
+        "gtm",
+        "marketing",
+        "competitor",
+        "intelligence",
+        "research",
+        "l1"
+      ]
+    },
+    {
       "id": "newsletter-desk",
       "name": "Newsletter Desk",
       "title": "Unsent weekly newsletter from saved links",
@@ -488,6 +604,35 @@
         "marketing",
         "paid",
         "official",
+        "l1"
+      ]
+    },
+    {
+      "id": "seo-aeo-desk",
+      "name": "SEO & AEO Desk",
+      "title": "Search Engine & AI Answer Visibility Specialist",
+      "category": "marketing",
+      "autonomy": "L1",
+      "tagline": "Search engine and AI answer visibility — writer-ready briefs, no publishing.",
+      "why": "AI answer engines (Perplexity, ChatGPT, Grok) increasingly answer buyer queries directly. SEO & AEO Desk tracks citation footprints and produces heading-by-heading briefs.\n",
+      "plugins": [
+        "Notion"
+      ],
+      "featured": true,
+      "official_use_case": false,
+      "path": "templates\\marketing\\seo-aeo-desk",
+      "profile_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\\marketing\\seo-aeo-desk/PROFILE.md",
+      "tree_url": "https://github.com/cobusgreyling/grok-bot-templates/tree/main/templates\\marketing\\seo-aeo-desk",
+      "share_url": null,
+      "score": 100,
+      "grade": "A",
+      "ready": true,
+      "tags": [
+        "seo",
+        "aeo",
+        "search",
+        "content",
+        "marketing",
         "l1"
       ]
     },
@@ -641,6 +786,35 @@
       ]
     },
     {
+      "id": "alfred-governance",
+      "name": "Alfred Governance",
+      "title": "Fleet Operations & Bot Governance Officer",
+      "category": "ops",
+      "autonomy": "L1",
+      "tagline": "Lean fleet topology — default to zero new bots.",
+      "why": "Bot proliferation creates overlapping listeners, wasted compute quotas, and unowned automation drift. Alfred preserves organizational clarity.\n",
+      "plugins": [
+        "Notion",
+        "Slack"
+      ],
+      "featured": true,
+      "official_use_case": false,
+      "path": "templates\\ops\\alfred-governance",
+      "profile_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\\ops\\alfred-governance/PROFILE.md",
+      "tree_url": "https://github.com/cobusgreyling/grok-bot-templates/tree/main/templates\\ops\\alfred-governance",
+      "share_url": null,
+      "score": 100,
+      "grade": "A",
+      "ready": true,
+      "tags": [
+        "governance",
+        "operations",
+        "quota",
+        "roster",
+        "l1"
+      ]
+    },
+    {
       "id": "chief-of-staff",
       "name": "Chief of Staff",
       "title": "Source-linked daily digest",
@@ -726,6 +900,36 @@
       ]
     },
     {
+      "id": "haggle-bot-procurement",
+      "name": "Haggle Bot Procurement",
+      "title": "Vendor Spend & Contract Negotiation Agent",
+      "category": "ops",
+      "autonomy": "L1",
+      "tagline": "Know vendor spend cold — find savings with evidence.",
+      "why": "Unchecked auto-renewals and zombie SaaS licenses drain corporate cash. Haggle Bot models high-leverage procurement counter-offers before contracts renew.\n",
+      "plugins": [
+        "Notion",
+        "Slack"
+      ],
+      "featured": true,
+      "official_use_case": false,
+      "path": "templates\\ops\\haggle-bot-procurement",
+      "profile_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\\ops\\haggle-bot-procurement/PROFILE.md",
+      "tree_url": "https://github.com/cobusgreyling/grok-bot-templates/tree/main/templates\\ops\\haggle-bot-procurement",
+      "share_url": null,
+      "score": 100,
+      "grade": "A",
+      "ready": true,
+      "tags": [
+        "procurement",
+        "negotiation",
+        "spend",
+        "vendor",
+        "saas",
+        "l1"
+      ]
+    },
+    {
       "id": "incident-desk",
       "name": "Incident Desk",
       "title": "Slack-and-GitHub incident timeline",
@@ -751,6 +955,35 @@
         "incidents",
         "slack",
         "github",
+        "l1"
+      ]
+    },
+    {
+      "id": "jenny-ops-lead",
+      "name": "Jenny Ops Lead",
+      "title": "Head of Fleet Operations & Governance",
+      "category": "ops",
+      "autonomy": "L1",
+      "tagline": "Operational conscience of the fleet — alignment over churn.",
+      "why": "Without an operational anchor, multi-bot teams drift into conflicting edits, quota exhaustion, and uncoordinated background loops.\n",
+      "plugins": [
+        "Notion",
+        "Slack"
+      ],
+      "featured": true,
+      "official_use_case": false,
+      "path": "templates\\ops\\jenny-ops-lead",
+      "profile_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\\ops\\jenny-ops-lead/PROFILE.md",
+      "tree_url": "https://github.com/cobusgreyling/grok-bot-templates/tree/main/templates\\ops\\jenny-ops-lead",
+      "share_url": null,
+      "score": 100,
+      "grade": "A",
+      "ready": true,
+      "tags": [
+        "operations",
+        "fleet",
+        "governance",
+        "standup",
         "l1"
       ]
     },
@@ -834,6 +1067,35 @@
       "tags": [
         "personal",
         "calendar",
+        "l1"
+      ]
+    },
+    {
+      "id": "career-engineer",
+      "name": "Career Engineer",
+      "title": "Technical Resume Architect & Mandate Negotiator",
+      "category": "personal",
+      "autonomy": "L1",
+      "tagline": "ATS-optimized CV architecture and verified mandate negotiation.",
+      "why": "Generic AI resumes hallucinate client credentials, invent buzzwords, and fail ATS parsers. Career Engineer enforces strict factual integrity and verified metrics.\n",
+      "plugins": [
+        "Notion"
+      ],
+      "featured": true,
+      "official_use_case": false,
+      "path": "templates\\personal\\career-engineer",
+      "profile_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\\personal\\career-engineer/PROFILE.md",
+      "tree_url": "https://github.com/cobusgreyling/grok-bot-templates/tree/main/templates\\personal\\career-engineer",
+      "share_url": null,
+      "score": 100,
+      "grade": "A",
+      "ready": true,
+      "tags": [
+        "career",
+        "resume",
+        "ats",
+        "compensation",
+        "negotiation",
         "l1"
       ]
     },
@@ -1320,9 +1582,52 @@
         "policy",
         "l1"
       ]
+    },
+    {
+      "id": "triage-bot",
+      "name": "Support Triage Bot",
+      "title": "Customer Support & Incident Triage Lead",
+      "category": "support",
+      "autonomy": "L1",
+      "tagline": "Rapid customer support clustering, symptom reproduction, and response drafting.",
+      "why": "Repetitive inquiries and unresolved bugs overwhelm support desks. Triage Bot clusters incoming issues, verifies symptoms with reproduction steps, and drafts replies.\n",
+      "plugins": [
+        "Zendesk",
+        "Slack"
+      ],
+      "featured": true,
+      "official_use_case": false,
+      "path": "templates\\support\\triage-bot",
+      "profile_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/templates\\support\\triage-bot/PROFILE.md",
+      "tree_url": "https://github.com/cobusgreyling/grok-bot-templates/tree/main/templates\\support\\triage-bot",
+      "share_url": null,
+      "score": 100,
+      "grade": "A",
+      "ready": true,
+      "tags": [
+        "support",
+        "triage",
+        "customer",
+        "incident",
+        "tickets",
+        "l1"
+      ]
     }
   ],
   "teams": [
+    {
+      "id": "agora-career",
+      "name": "Agora Career",
+      "lead": "career-engineer",
+      "bots": [
+        "career-engineer",
+        "jenny-ops-lead",
+        "haggle-bot-procurement"
+      ],
+      "why": "Executive career management requires decoupling resume keyword tailoring, standing ops governance, and procurement-backed compensation negotiation.\n",
+      "autonomy": "L1",
+      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/agora-career/team.yaml"
+    },
     {
       "id": "eng",
       "name": "Eng",
@@ -1335,6 +1640,19 @@
       "why": "Staging reports stall when repro, the unsent issue, and the risk review live in one undifferentiated chat.\n",
       "autonomy": "L1",
       "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/eng/team.yaml"
+    },
+    {
+      "id": "executive-bot-boss",
+      "name": "Executive Bot Boss",
+      "lead": "alfred-governance",
+      "bots": [
+        "alfred-governance",
+        "jenny-ops-lead",
+        "gtm-scout"
+      ],
+      "why": "Managing autonomous bot fleets at enterprise scale requires unified topology governance, daily operational standups, and competitor market intelligence.\n",
+      "autonomy": "L1",
+      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/executive-bot-boss/team.yaml"
     },
     {
       "id": "loop",
@@ -1415,6 +1733,20 @@
       "why": "Latency, Slack asks, and launch day collide unless one Bot owns evidence, one clusters asks, and one refuses to publish.\n",
       "autonomy": "L1",
       "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/product/team.yaml"
+    },
+    {
+      "id": "rankem-mobile-studio",
+      "name": "Rankem Mobile Studio",
+      "lead": "firstmate-grok-ship",
+      "bots": [
+        "firstmate-grok-ship",
+        "quill-harness",
+        "software-engineer-bot",
+        "pr-reviewer"
+      ],
+      "why": "Production mobile and full-stack software factories require compute arbitrage, rigorous test harness assertions, autonomous triage, and risk-first PR review.\n",
+      "autonomy": "L1",
+      "yaml_url": "https://raw.githubusercontent.com/cobusgreyling/grok-bot-templates/main/teams/rankem-mobile-studio/team.yaml"
     },
     {
       "id": "research",
