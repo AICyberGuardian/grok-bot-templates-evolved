@@ -1,0 +1,19 @@
+id: pr-sweep-30m
+name: 30-Minute PR Sweep
+owner: pr-reviewer
+cadence: weekdays every 30 minutes 09:00-18:00
+skill: review-pr-risk
+input_source: >
+  GitHub pull requests opened or updated in the last 30 minutes across team repositories
+expected_result: >
+  Prioritized PR risk pack highlighting broken diffs, untested paths, and context gaps.
+  Nothing auto-merged or commented without approval.
+approval_boundary: >
+  Do not merge, push, approve, or post comments to GitHub without explicit user instruction.
+missing_source: >
+  If GitHub connector is disconnected or PR cannot be opened, report failure and stop.
+  Do not hallucinate diffs.
+test_first: true
+prompt: >
+  Sweep all open pull requests updated in the past 30 minutes. Run review-pr-risk
+  on each diff, cite file paths, and flag untested risk areas.

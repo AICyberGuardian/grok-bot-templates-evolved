@@ -1,0 +1,17 @@
+id: daily-fleet-standup
+name: 5 AM Fleet Operations Standup
+owner: chief-of-staff
+cadence: weekdays at 05:00 in the Bot timezone
+skill: grok-bot-ops
+input_source: >
+  Container telemetry, /workspace disk audits, team task boards, and blocker queues
+expected_result: >
+  Operational 1:1 standup brief synthesizing blockers, milestone progress, and container health metrics.
+approval_boundary: >
+  Do not trigger container Resets or modify live multi-bot task definitions without approval.
+missing_source: >
+  If task tracking sources or container metrics are unavailable, report missing data and stop.
+test_first: true
+prompt: >
+  Run grok-bot-ops health check and compile the daily 5 AM operations standup brief
+  covering active milestones, cross-bot dependencies, and disk capacity.

@@ -1,0 +1,17 @@
+id: nightly-code-hygiene
+name: 3 AM Code Hygiene Audit
+owner: ci-sweeper
+cadence: every day at 03:00 UTC
+skill: sweep-ci
+input_source: >
+  Main and development branches, CI workflow logs, and stale pull request lists
+expected_result: >
+  Hygiene report detailing stale branches, flaky CI suites, security alerts, and outdated lockfiles.
+approval_boundary: >
+  Do not delete branches, merge PRs, or update production environment variables unattended.
+missing_source: >
+  If CI logs or repository metadata are inaccessible, state the disconnection clearly and halt.
+test_first: true
+prompt: >
+  Audit repository code hygiene, verify test suite stability, check for stale branches,
+  and package findings into an actionable morning digest.
