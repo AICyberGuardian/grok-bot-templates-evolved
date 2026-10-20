@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "fleet-ops": {
+      "command": "python3",
+      "args": [
+        "/workspace/mcp-servers/fleet-ops/fleet_ops_mcp.py"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1",
+        "WORKSPACE_ROOT": "/workspace"
+      }
+    }
+  }
+}

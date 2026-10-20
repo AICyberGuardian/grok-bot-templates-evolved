@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "knowledge-brain": {
+      "command": "python3",
+      "args": [
+        "/workspace/mcp-servers/knowledge-brain/knowledge_brain_mcp.py"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1",
+        "WORKSPACE_ROOT": "/workspace"
+      }
+    }
+  }
+}

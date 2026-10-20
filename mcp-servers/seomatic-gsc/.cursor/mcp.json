@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "seomatic-gsc": {
+      "command": "python3",
+      "args": [
+        "/workspace/mcp-servers/seomatic-gsc/seomatic_gsc_mcp.py"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1",
+        "WORKSPACE_ROOT": "/workspace"
+      }
+    }
+  }
+}
